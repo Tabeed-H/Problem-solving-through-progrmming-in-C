@@ -1,0 +1,39 @@
+1. Which among the following is the most complete definition of Programming?
+    Accepted Answers:
+    Programming is the process of taking an algorithm and encoding it into a notation (using a programming language), so that it can be executed by a computer.
+
+2. Which of the following controls the way in which the computer system works and give means by which users can interact with the computer?
+    Accepted Answers:
+    The operating system
+
+3. CPU consists of
+    Accepted Answers:
+    ALU, Control Unit
+
+4.C was developed by
+    Accepted Answers:
+    Dennis Ritchie
+
+5.C is-
+    Accepted Answers:
+    General-purpose programming language
+
+6.The relation between bit and byte in digital logic is
+    Accepted Answers:
+    1 byte = 8 bits
+
+7.Which of the following is not a programming language?
+    Accepted Answers:
+    Unix
+
+8.The binary AND operation of the numbers “100101” and “110011” results (in decimal)
+    Accepted Answers:
+    33
+
+9.Which of the following is not an input device of computer?
+    Accepted Answers:
+    Printer
+
+10.The process through which an user can find error(s) in a program is called
+    Accepted Answers:
+    Debugging
