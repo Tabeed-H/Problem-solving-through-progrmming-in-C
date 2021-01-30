@@ -1,0 +1,58 @@
+1. Set of instructions to be provided to an electronic machine to perform a task is called
+    Answers:
+    a) Programming
+
+2. Compiler helps in the translation from
+    Answers:
+    c) High-level language to machine level language
+
+3. The ALU unit of computer
+ a) Can perform logical operation only
+ b) Can perform arithmetic operation only
+ c) Can perform both arithmetic and logical operations
+1 point
+What type of device is computer printer?
+ a) Memory
+ b) Output
+ c) Storage
+ d) Input
+1 point
+Algorithm is -
+ a) A process or set of rules to be followed in calculations or other problem-solving operations, especially by a human.
+ b) A process or set of rules to be followed to solve numerical problems only.
+ c) A process or set of rules to be followed in calculations or other problem-solving operations, especially by a computer.
+ d) A process or set of rules to be followed to solve logical problems only.
+1 point
+When we write X=10 and Y=X, which of the following memory assignment is correct
+ a) X and Y will have same location and 10 will be stored.
+ b) X and Y will have two distinct locations and 10 will be stored in both.
+ c) X and Y will have same location and only X will contain value 10
+ d) X and Y will have two distinct locations and only X will contain value 10
+1 point
+The input N from the user is 6. The output of the following algorithm is
+
+ a) 21
+ b) 720
+ c) 1
+ d) 2
+
+What will be the output of the algorithm given below?
+
+ a) 51
+ b) 52
+ c) 50
+ d) Compilation error
+1 point
+The following algorithm is used to find a number X is even or odd. What will be the content of the empty box?
+
+ a) X%10=0?
+ b) X/10=0?
+ c) X/2=0?
+ d) X%2=0?
+1 point
+X is an integer (X=2648). The print value of Y of the flowchart below is
+
+ a) 20
+ b) 22664488
+ c) 8462
+ d) 0
