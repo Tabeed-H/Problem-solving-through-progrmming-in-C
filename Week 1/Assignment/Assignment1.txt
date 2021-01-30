@@ -7,16 +7,12 @@
     c) High-level language to machine level language
 
 3. The ALU unit of computer
- a) Can perform logical operation only
- b) Can perform arithmetic operation only
- c) Can perform both arithmetic and logical operations
-1 point
-What type of device is computer printer?
- a) Memory
- b) Output
- c) Storage
- d) Input
-1 point
+    Answers:
+    c) Can perform both arithmetic and logical operations
+
+4. What type of device is computer printer?
+    Answers:
+    b) Output
 Algorithm is -
  a) A process or set of rules to be followed in calculations or other problem-solving operations, especially by a human.
  b) A process or set of rules to be followed to solve numerical problems only.
