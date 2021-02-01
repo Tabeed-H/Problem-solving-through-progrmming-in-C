@@ -1,0 +1,98 @@
+1. Which of the following cannot be used as a variable in C programming?
+    Answers:
+    c) 123Var
+
+    Explanation:
+    Variable names in C cannot start with digits.
+
+2. Which of the following is not a correct variable type in C?
+    Answers:
+    d) All of above are correct variable type
+
+3. The execution of any C program is
+    Answers:
+    a) Sequential
+
+4. Which of the following statements is correct?
+    I. Keywords are those words whose meaning is already defined by Compiler.
+    II. Keywords cannot be used as variable names.
+    III. There are 32 keywords in C.
+    IV. C keywords are also called as reserved words.
+
+    Answers:
+    d) All of the above
+
+5. A function is
+    a) Block of statements to perform some specific task
+    b) It is a fundamental modular unit to perform some task
+    c) It has a name and can be used multiple times
+    d) All of the above
+
+    Answers:
+    d) All of the above
+
+6. What will be the output of the following program:
+
+        #include <stdio.h>
+        int main()
+        {
+            float a = 5.0;
+            printf("The output is %.2f", (9/5)*a+7);
+            return 0;
+        }
+ 
+    Answers:
+    d) 12.00
+
+7. What will be the output of the following code?
+
+        #include <stdio.h>
+        int main()
+        {
+            int var = 0110;
+            var = var + 7;
+            printf("%d", var);
+            return 0;
+        }
+
+    Answers:
+    c) 79
+
+8. If integer needs two bytes of storage, then the minimum value of a signed integer in C would be
+    Answers:
+    d) -2^15
+
+    Explanation:
+    When the size of datatype int is taken 2 bytes then the range in which the interger numbers can be saved is
+    -32,768 to 32,768 which corresponds to the value -2^15 to 2^15
+ 
+9. What will be the output of the program given below?
+
+        #include <stdio.h>
+        int main()
+        {
+            a = 9;
+            printf("%d", a);
+            return 0;
+        }
+
+    Answers:
+    d) Compilation Error
+
+    Explanation:
+    The type of variable "a" is not defined.
+
+10. What is the output?
+
+        #include <stdio.h>
+        #define fun(x)(x*x-x)
+        int main()
+        {
+            float i;
+            i = 37.5/fun(2);
+            print("%.2f", i);
+            return 0;
+        }
+
+    Answers:
+    18.50
