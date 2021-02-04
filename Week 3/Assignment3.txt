@@ -1,0 +1,204 @@
+1. The precedence of arithmetic operators is (from highest to lowest)
+    a) %, *, /, +, –
+    b) %, +, /, *, –
+    c) +, -, %, *, /
+    d) %, +, -, *, /
+
+    Answers:
+    a) %, *, /, +, –
+
+2. What is the output of the following program? (% indicated mod operation)
+
+        #include <stdio.h>
+        int main()
+        {
+            float i = -3.0;
+            int k = i % 2;
+            printf("%d", k);
+            return 0;
+        }
+    a) -1
+    b) 1
+    c) 0
+    d) Compilation error
+
+    Answers:
+    d) Compilation error
+
+    Explanation:
+    % mod moderator canot be used with floating point numbers.
+
+3. Find the output of the following code. (% indicated modulo operation)
+        #include <stdio.h>
+        int main()
+        {
+            int a = 10, b = 3, c = 2, d = 4, result;
+            result = a+a*-b/c%d+c*d;
+            printf("%d", result);
+            return 0;
+        }
+    a) -42
+    b) 24
+    c) 15
+    d) -34
+
+    Answers:
+    c) 15
+
+4. What is the output of the following C code?
+
+        #include <stdio.h>
+        int main()
+        {
+            int h = 8;
+            int b = 4 * 6 + 3 * 4 < h * 5?4:3;
+            printf("%d\n", b);
+            return 0;
+        }
+    a) 0
+    b) 3
+    c) 4
+    d) Compilation error
+
+    Answers:
+    c) 4
+
+    Explanation:
+    breaking down the expression
+        4 * 6 + 3 * 4 < h * 5?4:3
+            precedence of the operators here is 
+             1. *
+             2. +
+             3. <
+             4. Tunary operator ?:
+        first 4*6 , 3*4 , h*5 will be solved
+        second 12+3        
+        third- the condition at the end will be 
+            36 < 40 ? 4 : 3
+            here the expression has reduced to a tunary operation
+            since 36 < 40 is true 4 will be the result.
+
+5. What will be the output?
+
+        #include <stdio.h>
+        int main()
+        {
+            int a = 1, b = 2, c = 3;
+            if(c > b > a)
+            {
+                printf("TRUE");
+            }else
+            {
+                printf("FALSE");
+            }
+            return 0;
+        }
+    a) TRUE
+    b) FALSE
+    c) Syntax Error
+    d) Compilation Error
+
+    Answers:
+    b) FALSE
+
+    Explanation:
+    ordre of precedence here is same so the first expression to be evaluated is from left to right
+    c>b is true which is represented as 1
+    1>a is false
+
+6. Find the output of the following C code
+
+        #include <stdio.h>
+        int main()
+        {
+            int x = 1;
+                if((3>5) || (2!=3))
+                {
+                    printf("IITKGP\n");
+                }else if(x &= 0)
+                {
+                    printf("IITD\n");
+                }else
+                {
+                    printf("IITM\n");
+                }
+            return 0;
+        }
+    a) IITKGP
+    b) IITD and IITM
+    c) IITKGP and IITM
+    d) IITM
+
+    Answers:
+    a) IITKGP
+
+7. What will be the output?
+
+        #include <stdio.h>
+        int main()
+        {
+            int x = 2;
+            if(x = 1)
+                printf("TRUE");
+            else
+                printf("FALSE");
+
+            return 0;
+        }
+    a) TRUE
+    b) FALSE
+    c) Compilation Error
+    d) Compiler Dependent     
+
+    Answers:
+    a) TRUE
+
+    Explanation:
+    The variable x is initialize as 1
+    in the if statement the variable x is reassigned 1
+        since = is an assignment operator
+    sinve any number except 0 is taken as true the condition evaluated to TRUE  
+
+8. Which of the following statement is correct?
+    a) Operator precedence determines which operator is performed first in an expression with more than one operator with different precedence.
+        Associativity is used when two operators of same precedence appear in an expression
+    b) Operator associativity determines which operator is performed first in an expression with more than one operator with different associativity.
+        Precedence is used when two operators of same precedence appear in an expression
+    c) Operator precedence and associativity are same.
+    d) None of the above
+
+    Answers:
+    a) Operator precedence determines which operator is performed first in an expression with more than one operator with different precedence.
+        Associativity is used when two operators of same precedence appear in an expression
+
+9. Which of the following method are accepted for assignment?
+    a) 8=x=y=z
+    b) x=8=y=z
+    c) x=y=z=8
+    d) None
+
+    Answers:
+    c) x=y=z=8
+
+10. What will be the output?
+        
+        #include <stdio.h>
+        int main()
+        {
+            int x;
+            x = 9<5+3 && 7;
+            prinf("%d", x);
+            return 0;
+        }
+    a. 0
+    b. 1
+    c. 7
+    d. Compilation error   
+
+    Answers:
+    a. 0
+
+    Explanation:
+    In the order of precedence 5 + 3 will be evaluated first
+    then 9 < 8 return 0
+    at last 0 && 7 will return 0
