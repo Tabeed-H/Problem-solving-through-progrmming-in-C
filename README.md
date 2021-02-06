@@ -12,3 +12,5 @@ Terms used:
 2. *--d* -> The answer of the question COULD BE wrong 
             In this case all the options will be given and the most appropiate answer will be given\n
 3. *--n* -> The answer is NOT known 
+
+**REMOVE THE COMMENTS BEFORE USING THE CODE**
