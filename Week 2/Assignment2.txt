@@ -58,6 +58,11 @@
     Answers:
     c) 79
 
+    Explanation:
+    any number starting with 0 is in octal number system.
+    0110 is an octal number which when casted into an integer type gives 72
+    int the second step 7 is added to 72 giving a total of 79.
+
 8. If integer needs two bytes of storage, then the minimum value of a signed integer in C would be
     Answers:
     d) -2^15
