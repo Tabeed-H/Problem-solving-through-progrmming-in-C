@@ -1,0 +1,180 @@
+1. The control/conditional statements used in C is/are
+    a) if-else statements
+    b) switch statements
+    c) Both (a) and (b)
+    d) None of these
+
+    Answers:
+    c) Both (a) and (b)
+
+2. What is the output of the following C code?
+
+        #include <stdio.h>
+        int main()
+        {
+            int x = 1;
+            if( x == 0)
+            {
+                if( x >= 0)
+                {
+                    printf("x = 0 \n");
+                }else
+                {
+                    printf("x = 1 \n");
+                }
+            }
+
+            return 0;
+        }
+    a) x=1
+    b) x=0
+    c) Depends on compiler
+    d) No print statements
+
+    Answers:
+    d) No print statements
+    
+3. Compute the printed value of i of the C program given below;
+        #include <stdio.h>
+        int main()
+        {
+            int i = 2;
+            i =  i++;
+            printf("%d", i);
+            return 0;
+        }
+    a) 2
+    b) 3
+    c) 4
+    d) Compiler error
+
+    Answers:
+    a) 2
+
+    Explanation:
+    Understanting the main difference between a pre-process and post-process operator
+    i++ is a post-process operator which implies first i will be assigned the value of i and then the increment will take place.
+        i = i++
+    In case of a pre-proces operator eg. ++i, first the value of i will be incremented and then assigned to the variable.
+            EXANPLE:
+                int i = 1;
+                i = i++  returns 1
+                i = ++1 returns 2
+
+4. If multiple conditions are used in a single if statement then the testing of those conditions are done
+    a) From Right to Left
+    b) From Left to right
+    c) Randomly
+    d) None
+
+    Answers:
+    b)From lef to right
+
+5. What is the purpose of the given program? n is the input number given by the user.
+        #include <stdio.h>
+        int main()
+        {
+            int n, x = 0, y;
+            printf("Enter an interger: ");
+            while(n != 0)
+            {
+                y = n % 10;
+                x = x -y;
+                n = n / 10;
+            }
+            printf("Output is = %d", x);
+            return 0;
+        }
+    a) Sum of the digits of a number
+    b) Negative sum of the digits of a number
+    c) Reverse of a number
+    d) The same number is printed
+
+    Answers:
+    b) Negative sum of the digits of a number
+
+6. while(1) is used in a program to create
+    a) False statement
+    b) Infinite loop
+    c) Terminating the loop
+    d) Never executed loop
+
+    Answers:
+    b) Infinite loop
+
+7. What will be the value of a ,b, c after the execution of the followings
+        int a = 5, b = 7, c = 111;
+        c /= ++a * b--;
+    a) a=5, b=6, c=2;
+    b) a=6, b=7, c=1;
+    c) a=6, b=6, c=2;
+    d) a=5, b=7, c=1;
+    
+    Answers:
+    c) a=6, b=6, c=2;
+
+    Explanation:
+    SOLVING
+    111 /= ++5 * 7-- (to understand this step knowledge of pre-process and post-process operator is required)
+    111 /= 6 * 7
+    111 /= 42
+    2 
+
+    a = 6, b = 6, c = 2
+
+8. What will be printed when the following C code is executed?
+        #include <stdio.h>
+        int main()
+        {
+            if('A' < 'a')
+            {
+                printf("NPTEL");
+            }else
+            {
+                printf("PROGRAMMING");
+            }
+            return 0;
+        }
+    a) NPTEL
+    b) PROGRAMMING
+    c) No output
+    d) Compilation error as A and a are not declared as character variable
+
+    Answers:
+    a) NPTEL
+
+    Explanation:
+    ASCII value of 'A' is 65 and ASCII value of 'a' is 97
+    65 < 97 is true
+
+9. Switch statement accepts
+    a) int
+    b) char
+    c) long
+    d) All of the above
+
+    Answers:
+    d) All of the above
+
+10. What will be the output of the following program?
+        #include <stdio.h>
+        int main()
+        {
+            int x = 1;
+            switch(x)
+            {
+                case 1: printf("Choice is 1 \n");
+                default: printf("Choice other than 1 \n");
+            }
+            return 0;
+        }
+    a) Choice is 1
+    b) Choice other than 1
+    c) Both (a) and (b)
+    d) Syntax error 
+
+    Answers:
+    c) Both (a) and (b)   
+
+    Explanation:
+    There is no break statement in case 1 which is the correct answer therefore the default statement is also executed.
