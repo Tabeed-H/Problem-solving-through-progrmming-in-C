@@ -1,0 +1,191 @@
+1. In C language three way transfer of control is possible using
+    a) Ternary operator
+    b) Unary operator
+    c) Logical operator
+    d) None
+
+    Answers:
+    a) Ternary operator
+
+2.The loop in which the statements within the loop are executed at least once is called
+    a) for
+    b) do-while
+    c) while
+    d) goto
+
+    Answers:
+    b) do-while
+
+3. What will be the output of the program?
+        #include <stdio.h>
+        int main()
+        {
+            float k = 0;
+            for(k = 0.5; k < 3; k++)
+            {
+                printf("I love C \n");
+            }
+
+            return 0;
+        }
+    a) Error
+    b) I love C -- will be printed 6 times
+    c) I love C -- will be printed 3 times
+    d) I love C –will be printed 5 times
+
+    Answers:
+    c) I love C -- will be printed 3 times
+
+4. What is the out[ut of the following code?
+        #include <stdio.h>
+        int main()
+        {
+            int i = 1;
+            do
+            {
+                printf("while cd do-while \n");
+            }while(i == 1);
+
+            printf("out of loop");
+            return 0;
+        }
+    a) ‘while vs do-while’ once
+    b) ‘Out of loop’ infinite times
+    c) Both ‘while vs do-while’ and ‘Out of loop’ once
+    d) ‘while vs do-while’ infinite times
+
+    Answers:
+    d) ‘while vs do-while’ infinite times
+    
+5. Find the output of the following C program
+        #include <stdio.h>
+        int main()
+        {
+            int i =0;
+            if(i == 0)
+            {
+                i = i + 1;
+                break;
+            }
+            printf("%d", i);
+            return 0;
+        }
+    a) 0
+    b) 1
+    c) No output
+    d) Compiler error
+
+    Answers:
+    d) Compiler error
+
+    Explanation:
+    Break; statement is not allowed inside a conditional statement its only allowed inside a loop.
+
+6. What is the output of the following C program?
+        #include <stdio.h>
+        int main()
+        {
+            int a = 0, i, b;
+            for(i = 0; i <= 2; i += 0.5)
+            {
+                a++;
+                continue;
+            }
+            printf("%d", a);
+            return 0;
+        }
+    a) 5
+    b) 4
+    c) 1
+    d) No output
+
+    Answers:
+    d) No output
+
+    Explanation:
+    The variable i is initialized as an integer, but in the loop the variable i is incremented by 0.5
+    which is not possible and their is no output.
+
+7. What will be the output?
+        #include <stdio.h>
+        int main()
+        {
+            int i = 0;
+            for(;;)
+            {
+                if(i == 10)
+                    break;
+                printf("%d", ++i);
+            }
+            return 0;
+        }
+    a) Syntax error
+    b) 0 1 2 3 4 5 6 7 8 9 10
+    c) 1 2 3 4 5 6 7 8 9 10
+    d) 0 1 2 3 4 5 6 7 8 9
+
+    Answers:
+    c) 1 2 3 4 5 6 7 8 9 10
+
+8. What is the output of the following C code?
+        #include <stdio.h>
+        int main()
+        {
+            int a = 1;
+            if(a--)
+            {
+                printf("True \n");
+            }
+            if(++a)
+            {
+                printf("False \n");
+            }
+            return 0;
+        }
+    a) True
+    b) False
+    c) Both ‘True’ and ‘False’
+    d) Compilation error
+
+    Answers:
+    c) Both ‘True’ and ‘False’
+
+9. What is the output of the below C program?
+        #include < stdio.h>
+        int main()
+        {
+            short int k = 1, j = 1;
+            while(k <= 4 || j <= 3)
+            {
+                k = k + 2;
+                j += 1;
+            }
+            printf("%d, %d", k,j);
+            return 0;
+        }
+    a) 5,4
+    b) 7,4
+    c) 5,6
+    d) 6,4
+
+    Answers:
+    b) 7,4
+
+10. What will be the value of "i" after the execution of the program below?
+        #include <stdio.h>
+        int main()
+        {
+            int i = 1, j;
+            for(j = 0; j <= 10; j+=i)
+            {
+                i = i + j;
+            }
+            return 0;
+        }
+    a) 10
+    b) 11
+    c) 12
+    d) 13
+
+    Answers:
+    d) 13
