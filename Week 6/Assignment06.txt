@@ -1,0 +1,146 @@
+1. Which of the statements is correct?
+    a) An array contains more than one element
+    b) All elements of array have to be of same data type
+    c) The size of array has to be declared upfront
+    d) All of the above
+
+    Answers:
+    d) All of the above
+
+2. An integer array of size 15 is declared in a C program. The memory location of the first byte of the array is 2000. What will be the location of the 13th element of the array? Assume int data type takes 2 bytes of memory.
+    a) 2013
+    b) 2024
+    c) 2026
+    d) 2030
+
+    Answers:
+    b) 2024
+
+3. Which statement is correct?
+    a) An index or subscript in array is a positive integer
+    b) An index or subscript in array is a positive or negative integer
+    c) An index or subscript in array is a real number
+    d) None
+
+    Answers:
+    a) An index or subscript in array is a positive integer.
+
+4. What will happen if in a C program you assign a value to an array element whose index exceeds the size of array?
+    a)The element will be set to 0
+    b)The compiler will not give any error but program may crash if some important data gets overwritten.
+    c)The compiler would report an error.
+    d)The array size would appropriately grow.
+
+    Answers:
+    b)The compiler will not give any error but program may crash if some important data gets overwritten.
+
+5. Which of the following statement is correct for the following code snippet?
+        int num[7];
+        num[7] = 8;
+    a) In the first statement 7 specifies a particular element, whereas in the second statement it specifies a type;
+    b) In the first statement 7 specifies a particular element, whereas in the second statement it specifies the array size.
+    c) In the first statement 7 specifies the array size, whereas in the second statement it specifies a particular element of array.
+    d) In both the statement 7 specifies array size.
+
+    Answers:
+    c) In the first statement 7 specifies the array size, whereas in the second statement it specifies a particular element of array.
+
+6. What will be the output of the following program?
+        int main()
+        {
+            int i;
+            int arr[3] = {3};
+            for(i = 0; i < 3; i++)
+            {
+                printf("%d", arr[i]);
+            }
+            return 0;
+        }
+    a) 3 followed by garbage values
+    b) 3 0 0
+    c) 3 1 1
+    d) Syntax error
+
+    Answers:
+    b) 3 0 0
+
+7. What will be the output?
+        #include <stdio.h>
+        int main()
+        {
+            int arr[] = {1,2,3,4,5,6};
+            int i, j, k;
+            j = ++arr[2];
+            k = arr[1]++;
+            i = arr[j++];
+            printf("i = %d, j = %d, k = %d", i, j, k);
+            return 0;
+        }
+    a) i=5, j=5, k=2
+    b) i=6, j=5, k=3
+    c) i=6, j=4, k=2
+    d) i=5, j=4, k=2
+    
+    Answers:
+    a) i=5, j=5, k=2
+
+8. What will be the output after execution of the program?
+        #include <stdio.h>
+        int main()
+        {
+            int i, a[4] = {3,1,2,4}, result;
+            result = a[0];
+            for(i = 1; i < 4; i++)
+            {
+                if(result > a[i])
+                {
+                    continue;
+                }else
+                {
+                    result = a[i];
+                }
+            }
+            printf("%d", result);
+            return 0;
+        }
+    a) 1
+    b) 2
+    c) 3
+    d) 4
+
+    Answers:
+    d) 4
+
+9. what will be the output?
+        #include <stdio.h>
+        int main()
+        {
+            int n = 2;
+            int sum = 5;
+            switch(n)
+            {
+                case 2: sum = sum - 3;
+                case 3: sum *= 4;
+                break;
+                default:
+                    sum = 0;
+            }
+            printf("%d", sum);
+            return 0;
+        }
+
+    Answers:
+    8
+
+10. Find the output of the following C program
+        #include <stdio.h>
+        int main()
+        {
+            int a;
+            int arr[5] = {1,2,3,4,5};
+            arr[1] = ++arr[1];
+            a = arr[1]++;
+            arr[1] = arr[a++];
+            printf("%d, %d", a , arr[1]);
+            return 0;
+        }
