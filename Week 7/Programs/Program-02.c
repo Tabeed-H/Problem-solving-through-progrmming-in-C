@@ -1,3 +1,5 @@
+// Write a C program to find the sum of all elements of each row of a matrix.
+
 #include <stdio.h>
 int main()
 {
@@ -17,15 +19,19 @@ int main()
 
     // **** CODE ****
 
-    int sum = 0;
-    for(i=0;i< r;i++) //Accepts the matrix elements from the test case data
+    int sum = 0;        // Initaily the sum is 0
+
+    // Loops for accessing the 2-D array
+    for(i = 0;i < r;i++) 
      {
-        for(j=0;j< c;j++)
+        for(j = 0;j < c;j++)
         {
-            sum = sum + matrix[i][j];
+            sum = sum + matrix[i][j];       // Adding the rows of the matrix
         }
 
-        printf("%d\n", sum);
+        printf("%d\n", sum);    // Printing to the console
+
+        // resetting the sum for the next row
         sum = 0;
      }
 

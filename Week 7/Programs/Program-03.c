@@ -1,3 +1,5 @@
+// Write a C program to find subtraction of two matrices i.e. matrix_A - matrix_B=matrix_C.
+
 #include <stdio.h>
 int main()
 {
@@ -27,17 +29,19 @@ int main()
 
     // **** CODE ****
 
-    for(i=0; i<row; i++)
+    // Logic for Matrix Subtraction
+    for(i = 0; i < row; i++)
     {
-        for(j=0; j<col; j++)
+        for(j = 0; j < col; j++)
         {
             matrix_C[i][j] = matrix_A[i][j] - matrix_B[i][j];
         }
     }
 
-    for(i=0; i<row; i++)
+    // Printing to the Console
+    for(i = 0; i < row; i++)
     {
-        for(j=0; j<col; j++)
+        for(j = 0; j < col; j++)
         {
             printf("%d ", matrix_C[i][j]);
         }

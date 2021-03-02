@@ -7,17 +7,18 @@ int main() {
 
     // **** CODE *****
     
-    int i = 0;
-    while (ch[i] != 0)
+    int i = 0;                  // Loop iterater
+    while (ch[i] != '\0')       // Loop runs until null character
     {
-        if((int)ch[i] >= 65 && (int)ch[i] <= 91)
+        if((int)ch[i] >= 65 && (int)ch[i] <= 91)        // Checks for UPPER CASE
         {
-            ++upper;
+            ++upper;   
         }
-        if((int)ch[i] >= 97 && (int)ch[i] <= 122)
+        if((int)ch[i] >= 97 && (int)ch[i] <= 122)       // Checks for LOWER CASE
         {
             ++lower;
         }
+        
         ++i;
 
     }

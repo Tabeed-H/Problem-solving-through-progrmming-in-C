@@ -1,3 +1,5 @@
+// Write a C program to print lower triangle of a square matrix.
+
 #include <stdio.h>
 int main()
 {
@@ -15,9 +17,12 @@ int main()
         }
 
     // **** CODE ****
-    for(i=0;i< r;i++) 
+
+    // LOGIC
+    // The difference btw the upper triangle of the matrix will alway be less than 0
+    for(i = 0;i < r;i++) 
     {
-        for(j=0;j<r; j++)
+        for(j = 0;j < r; j++)
         {
             if((i -j) < 0)
             {
@@ -26,9 +31,10 @@ int main()
         }
     }
 
-    for(i=0;i< r;i++) 
+    // Printing the modified Matrix to the console
+    for(i = 0;i < r;i++) 
     {
-        for(j=0;j<r; j++)
+        for(j = 0;j < r; j++)
         {
             printf("%d ",matrix[i][j]);
         }
