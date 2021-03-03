@@ -1,0 +1,117 @@
+1. Which of the following statements are correct?
+    1) A string is a collection of characters terminated by '\0'.
+    2) The format specifier %s is used to print a string.
+    3) The length of the string can be obtained by using the function strlen().
+    4) The pointer cannot work on string
+
+    Awsers:
+    b) 1,2,3
+
+2. The correct method of initializing a 2D array is
+    int abc[2][2] = {1, 2, 3 ,4} 
+    int abc[ ][ ] = {1, 2, 3 ,4} 
+    int abc[2][ ] = {1, 2, 3 ,4}
+    All of the above 
+
+    Answers:
+    a) int abc[2][2] = {1, 2, 3 ,4} 
+
+    Explaintion:
+    The Bound of the 2D array should be specified
+
+3. Array passed as an argument to a function is interpreted as
+    a) Address of all the elements in an array
+    b) Value of the first element of the array
+    c) Address of the first element of the array
+    d) Number of element of the array
+
+    Answers:
+    c) Address of the first element of the array
+
+4. What will be the output?
+        #include <stdio.h>
+        int main()
+        {
+            int disp[3][4] = {{5,6,8,2}, {4,5,3,7}, {1,10,13,15}};
+            printf("%d\n", disp[2][1]);
+            return 0;
+        }
+
+    Answers:
+    10
+
+5. Find the output of the following C programing.
+        #include <stdio.h>
+        int main()
+        {
+            char a[10][8] = {"hi", "hello", "fellows"};
+            printf("%s", a[2]);
+            return 0;
+        }
+
+        Answers:
+        a) fellows
+
+6. What will be the output?
+        #include <stdio.h>
+        int main()
+        {
+            char str1[] = "Week-7-Assignment";
+            char str2[] = {'W', 'e', 'e', 'k', '-', '7', '-', 'A', 's', 's', 'i', 'g', 'n', 'm', 'e', 'n', 't'};
+            int n1 = sizeof(str1) / sizeof(str1[0]);
+            int n2 = sizeof(str2) / sizeof(str2[0]);
+
+            printf("n1 = %d, n2 = %d", n1,n2);
+            return 0;
+        }
+
+    Answers:
+    a) n1=18, n2=17
+
+7. Consider the following C program segment:
+        #include <stdio.h>
+        #include <string.h>
+
+        int main()
+        {
+            char p[20];
+            char s[] = "String";
+            int length = strlen(s);
+            int i;
+            for(i = 0; i < length; i++)
+            {
+                p[i] = s[length - 1];
+            }
+            printf("%s", p);
+            return 0;
+        }
+
+    Answers:
+    d) Nothing is printed
+
+    Explaintion:
+    s[length - 0] is a null charactor '\0' which is then placed at p[0] thus ending the string;
+
+8. If the starting address of a floating point array Arr[10][10] is 2000,
+    what would be the memory address of the element Arr[5][6]? (Considering float takes 4 bytes of memory)
+
+    Answers:
+    c) 2224
+
+9. In C, the placement of elements of a two dimensional array is:
+
+    Answers:
+    a) Row Wise
+
+10. What will be the value of 'i' after the execution of the C code fragment?
+        static char str1[] = "dills";
+        static char str2[20];
+        static char str3[] = "daffo";
+
+        int i ;
+        i = strcmp(strcat(str3, strcpy(str2, str1)), "daffodills");
+
+    Answers:
+    0
+
+    strcmp() returns 0 if two strings are equal
