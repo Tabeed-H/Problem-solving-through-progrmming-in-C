@@ -17,8 +17,8 @@ int main()
     }
 
     // **** CODE ****
-    largest = 0;
-    for(i = 0; i < n; i++)
+    largest = arr[0];
+    for(i = 1; i < n; i++)
     {
         if(largest < arr[i])
         {

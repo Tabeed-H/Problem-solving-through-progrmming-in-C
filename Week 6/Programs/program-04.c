@@ -11,20 +11,16 @@ int main()
     scanf("%d", &array[i]); /* Read the array elements from the test case data */
 
     // **** CODE ****
-    for(i = 0; i < size ; i++)
-    {
-        for(int j = i + 1; j < size; j++)
-        {
-            if(array[i] == array[j])
-            {
-                for(int k = j; k < size; k++)
-                {
-                    array[k] = array[k + 1];
+    int j, k;
+    for (i = 0; i < size; i++) {
+        for (j = i + 1; j < size;) {
+            if (array[j] == array[i]) {
+                for (k = j; k < size; k++) {
+                array[k] = array[k + 1];
                 }
-
-                --size;
-            }
-            
+                size--;
+            } else
+                j++;
         }
     }
     // **** CODE ****
