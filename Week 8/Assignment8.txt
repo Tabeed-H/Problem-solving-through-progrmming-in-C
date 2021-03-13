@@ -49,7 +49,7 @@
         }
 
     Answer:
-    b) Zero times
+    c)Infinite  times
 
 4. What is the output of the C code given below?
         #include <stdio.h>
@@ -116,7 +116,7 @@
         }
 
     Answer:
-    d) Till stack overflows
+    a) Infinite Times
 
 8. What will be the output?
         #include <stdio.h>
