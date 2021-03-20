@@ -1,0 +1,95 @@
+1. Which of the following are C pre-processor directive?
+    a) #ifdef
+    b) #define
+    c) #endif
+    d) all of the mentioned
+
+    Answer:
+    d) all of the mentioned
+
+2. What is the correct order of insertion sort (in ascending order) of the array arr[5]={8 3 5 9 4}?
+    a) {3 8 5 9 4} --> {3 5 8 9 4} --> {3 4 5 8 9}
+    b) {3 8 5 9 4} --> {3 5 8 9 4} --> {3 5 8 4 9} --> {3 5 4 8 9} --> {3 4 5 8 9}
+    c) {3 8 5 9 4} --> {3 4 8 5 9} --> {3 4 5 8 9} --> {3 4 5 8 9} --> {3 4 5 8 9}
+    d) {8 3 5 4 9} --> {8 3 4 5 9} --> {3 4 5 8 9}
+
+    Answer:
+    a) {3 8 5 9 4} --> {3 5 8 9 4} --> {3 4 5 8 9}
+
+3. Given an array arr = {12, 34, 47, 62, 85, 92, 95, 99,105} and key = 34; what are the mid values (corresponding array elements) generated in the first and second iterations of binary search?
+    a) 85 and 12
+    b) 85 and 34
+    c) 62 and 34
+    d) 62 and 47
+
+    Answer:
+    b) 85 and 34
+
+4. Binary Search can be categorized into which of the following?
+    a) Brute Force technique
+    b) Divide and conquer
+    c) Greedy algorithm
+    d) Dynamic programming
+
+    Answer:
+    b) Divide and conquer
+
+5. Select the code snippet which performs unordered linear search iteratively?
+
+    Answer:
+    a)
+
+6. Consider the array A[]= {5,4,9,1,3} apply the insertion sort to sort the array . Consider the cost associated with each sort is 25 rupees, what is the total cost of the insertion sort for sorting the entire array?
+    a) 25
+    b) 50
+    c) 75
+    d) 100
+
+    Answer:
+    c) 75
+
+7. What will be the output of the following C code?
+        #include <stdio.h>
+        #if A == 1
+            #define B 0
+        #else   
+            #define B 1
+        #endif
+
+        int main()
+        {
+            printf("%d", B);
+            return 0;
+        }
+
+    Answer:
+    b) 1
+
+8. What will be the output?
+        #include <stdio.h>
+        #define a 10
+
+        int main()
+        {
+            printf("%d", a);
+            int a = 50;
+            printf("%d", a);
+            return 0;
+        }
+    
+    Answer:
+    d) Compilation error
+
+9. What is the worst case complexity of selection sort?
+
+    Answer:
+    d) O(n^2)
+
+10. If the given input array is sorted or nearly sorted, which of the following algorithm gives the best performance?
+    a) Insertion sort
+    b) Selection sort
+    c) Bubble sort
+    d) Quick sort
+
+    Answer:
+    a) Insertion sort
