@@ -43,7 +43,7 @@ int main()
             // if number to find is to the right or greater than element arr[middle] the lowerbound of the next array will be one greater than the current muddle index
             // for first iteration higher index remain same as previous ie "n"
             lowerBound = middle + 1;
-        }else if (num = arr[middle])
+        }else if (num == arr[middle])
         {
             // if number to find is same as the elemnt at arr[middle] 
             printf("found");
