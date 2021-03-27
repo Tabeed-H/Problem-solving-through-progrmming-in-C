@@ -1,0 +1,114 @@
+1. How can you improve the best-case efficiency in bubble sort? (The input is already sorted)
+    Answer:
+    c)
+
+2. Bisection method is used to find
+    a) Derivative of a function at a given point
+    b) Numerical integration of a function within a range
+    c) Root of a function
+    d) None of the above
+
+    Answer:
+    c) Root of a function
+
+3. In ……………, search starts at the beginning of the list and checks every element in the list.
+    a) Linear search
+    b) Binary search
+    c) Hash search
+    d) Binary tree search
+
+    Answer:
+    a) Linear search
+
+4. What is the output of the following program?
+        #include <stdio.h>
+        void func(int x)
+        {
+            x = 40;
+        }
+
+        int main()
+        {
+            int y = 30;
+            func(y);
+            printf("%d", y);
+            return 0;
+        }
+
+    a) 40
+    b) 30
+    c) Compilation error
+    d) Runtime error
+
+    Answer:
+    b) 30
+
+5. Assuming an initail range [1,5], the second (at the end of 2 iterations) iterative value of the root of te^-t - 0.3 = 0 using the Bisection method is:
+
+    Answer:
+    2
+
+6. What would be the equivalent pointer expression for referring to the array element a[i][j][k][l]?
+    a) (((*(a+i)+j)+k)+l)
+    b) *(*(*(*(a+i)+j)+k)+l)
+    c) (*(*(a+i)+j)+k+l)
+    d) *((a+i)+j+k+l)
+
+    Answer:
+    b) *(*(*(*(a+i)+j)+k)+l)
+
+7. What will be the output when you will execute th efollwong C code?
+        #include <stdio.h>
+        int main()
+        {
+            short num[3][2] = {2,5,11,17,23,28};
+            printf("%d, %d", *(num + 2)[0], **(num + 1));
+            return 0;
+        }
+
+    a) 23,11
+    b) 23,23
+    c) 11,17
+    d) 17,17
+
+    Answer:
+    a) 23,11
+
+8.  Assume sizeof an integer and a pointer is 2 byte. What is the output?
+        #include <stdio.h>
+        #define A 5
+        #define B 8
+
+        int main()
+        {
+            int (*x)[A][B];
+            printf("%d", sizeof(*x));
+            return 0;
+        }
+
+    a) 40
+    b) 80
+    c) 120
+    d) 160
+
+    Answer:
+    d) 80
+
+9. Find the output of the following program
+        #include <stdio.h>
+        int main()
+        {
+            int *ptr, a = 7;
+            ptr = &a;
+            *ptr = *ptr -2;
+            printf("%d, %d", *ptr,a);
+            return 0;
+        }
+
+    Answer:
+    5,5
+
+10. What is the solution of the equation given below using the bisectin Method up to four decimal places?
+
+    Answer:
+    1.0312
