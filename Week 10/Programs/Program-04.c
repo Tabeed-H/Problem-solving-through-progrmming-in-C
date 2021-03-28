@@ -1,3 +1,5 @@
+// Write a C program to sort a 1D array using pointer by applying Bubble sort technique.
+
 #include<stdio.h>
 void sort(int *a, int n);
 int main()
@@ -21,6 +23,9 @@ sort(a, n); // Calling the sorting function
    return 0;
 }
 
+
+// **** CODE ****
+
 void sort(int *a , int n)
 {
     for(int i = 0; i < n -1 ; i++)
@@ -36,3 +41,5 @@ void sort(int *a , int n)
         }
     }
 }
+
+// **** CODE ****
