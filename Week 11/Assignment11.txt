@@ -1,0 +1,59 @@
+1. Interpolation is a process for
+    a) extracting feasible data set from a given set of data
+    b) finding a value between two points on a line or curve.
+    c) removing unnecessary points from a curve
+    d) all of the mentioned
+
+    Answer:
+    b) finding a value between two points on a line or curve.
+
+2. Given two data points (a, f(a)) and (b, f(b)), the linear polynomial  f(x) that passes through these two points are given as 
+     
+     Answer:
+     d)
+
+3. A lagrange polynomial passes thorough three data points asa given below
+    the value of f(x)  at x = 7 is:
+
+    Answer:
+    b) 13.08
+
+4. The value of ${equation} by using one segment trapezoidal rule is
+    
+    Answer:
+    22.5962
+
+5. Accuracy of the trapezoidal rule increases when
+    a) integration is carried out for sufficiently large range
+    b) instead of trapezoid, we take rectangular approximation function
+    c) number of segments are increased
+    d) integration is performedfor only integer range
+
+    Answer:
+    c) number of segments are increased
+
+6. Solve the ordinary differential equation below using Runge-Kutta method step size h = 0.2;
+
+    Answer:
+    b) 2.93
+
+7. Using bisection method find the negative root 
+
+    Answer:
+    b) -2.706
+
+8. Match the follwing
+
+    Answer:
+    a) A-2, B-4, C-1, D-3
+
+9. the real root of the equation is:
+
+    Answer:
+    a) 0.53 to 0.56
+
+10. Consider the same recursive funtion that takes two arguments.
+    What will be the value of the funtin func() when it is called func(513,2)
+
+    Answer:
+    2
