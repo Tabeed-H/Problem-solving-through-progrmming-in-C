@@ -1,0 +1,151 @@
+1. Which of the following are themselves a collection of different data types?
+    a) String
+    b) Array
+    c) Character
+    d) Structure
+
+    Answer:
+    d) Structure
+
+2. Which of the following comments about the usage structures is true?
+    a) Storage class can be assigned to individual member
+    b) Individual members can be initialized within a structure type declaration
+    c) The scope of the member name is confined to the particular structure, within which it is defined
+    d) None
+
+    Answer:
+    c) The scope of the member name is confined to the particular structure, within which it is defined
+
+3. What will be the output of the program?
+        #include <stdio.h>
+        #include <stdlib.h>
+
+        int main()
+        {
+            int i;
+            int *ptr = (int *)malloc(5*sizeof(int));
+
+            for(i = 0; i < 5; i++)
+                *(ptr + i) = i;
+
+            printf("%d", *ptr++);
+            printf("%d", (*ptr)++);
+            printf("%d", *ptr);
+            printf("%d", *++ptr);
+            printf("%d", ++*ptr);
+
+            return 0;
+        }
+
+    Answer:
+    d) 0 1 2 2 3
+
+4.  What will be the output of the program?
+        #include <stdio.h>
+
+        int fun(int arr[])
+        {
+            arr = arr + 1;
+            printf("%d", arr[0]);
+        }
+
+        int main()
+        {
+            int arr[3] = {5,10,15};
+            fun(arr);
+
+            printf("%d", arr[0]);
+            printf("%d", arr[1]);
+
+            return 0;
+        }
+
+    Answer:
+    c) 10 5 10
+
+5. What is the output of the following C code? Assume that the address of x is
+    2000 (in decimal) and an integer requires four bytes of memory
+     
+    Answer:
+    a) 2036 2036 2036
+
+6. The program will allocate ______ bytes to ptr. Assume sizeof(int) = 4.
+        #include <stdio.h>
+        #include <stdlib.h>
+
+        int main()
+        {
+            int* ptr;
+            ptr = (int*)malloc(sizeof(int) * 4);
+            ptr = realloc(ptr, sizeof(int) * 2); 
+        }
+
+    Answer:
+    c) 8
+
+7. What is the output of the following C Program?
+
+        #include <stdio.h>
+        int main()
+        {
+            int *p, a = 10;
+            p = &10;
+            printf("%d", *p);
+            return 0;
+        }
+
+    Answer:
+    d) Compilation error
+
+8. What is the output?
+        #include <stdio.h>
+
+        int main()
+        {
+            struct xyz {int a;};
+            struct xyz obj1 = {11};
+            struct xyz obj2 = obj1;
+
+            printf("%d", obj2.a);
+
+            obj2.a = 101;
+            printf("%d", obj1.a);
+            printf("%d", obj2.a);
+
+            return 0;
+        }
+
+    Answer: 
+    b) 1111101
+
+9. calling a function f with a an array varaible a[3] where a is an array, is equivalent to 
+
+    Answer:
+    d) all of the mentioned
+
+10. What is the output of the following C program?
+
+        #include <stdio.h>
+
+        struct p
+        {
+            int x;
+            char y;
+        };
+
+        int main()
+        {
+            struct p p1[] = {1,21,69,42,64};
+            struct p *ptr = p1;
+
+            int x = (sizeof(p1) / 4);
+            if((x == sizeof(int) + 2*sizeof(char)))
+                printf("True");
+            else
+                printf("false");
+
+            return 0;
+        }
+
+    Answer:
+    a) true
